@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Bike Share</title>
+        <meta name="description" content="Bike Share provides Columbia student with a greener alternative for getting around the city">
+        <meta name="author" content="Akiko Shimizu">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+        <!-- Place favicon.ico and apple-touch-icon(s) here  -->
+
+        <!-- load inks css from the cdn -->
+        <link rel="stylesheet" type="text/css" href="http://cdn.ink.sapo.pt/3.0.0/css/ink-flex.min.css">
+        <link rel="stylesheet" type="text/css" href="http://cdn.ink.sapo.pt/3.0.0/css/font-awesome.min.css">
+
+        <!-- load inks css for IE8 -->
+        <!--[if lt IE 9 ]>
+            <link rel="stylesheet" href="http://cdn.ink.sapo.pt/3.0.0/css/ink-ie.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
+        <![endif]-->
+
+        <!-- test browser flexbox support and load legacy grid if unsupported -->
+        <script type="text/javascript" src="http://cdn.ink.sapo.pt/3.0.0/js/modernizr.js"></script>
+        <script type="text/javascript">
+            Modernizr.load({
+              test: Modernizr.flexbox,
+              nope : 'http://cdn.ink.sapo.pt/3.0.0/css/ink-legacy.min.css'
+            });
+        </script>
+
+        <script type="text/javascript" src="js/modernizr.js"></script>
+        <script type="text/javascript">
+            Modernizr.load({
+              test: Modernizr.flexbox,
+              nope : 'http://cdn.ink.sapo.pt/3.0.0/css/ink-legacy.min.css'
+            });
+        </script>
+
+        <!-- load inks javascript files -->
+        <script type="text/javascript" src="js/holder.js"></script>
+        <script type="text/javascript" src="js/ink-all.js"></script>
+        <script type="text/javascript" src="js/autoload.js"></script>
+
+        <style type="text/css">
+
+            body {
+                background: #ededed;
+                padding-top: 1em;
+            }
+
+            header h1 small:before  {
+                content: "|";
+                margin: 0 0.5em;
+                font-size: 1.6em;
+            }
+
+            article header{
+                padding: 0;
+                overflow: hidden;
+            }
+
+            article footer {
+                background: none;
+            }
+
+            article {
+                padding-bottom: 2em;
+                border-bottom: 1px solid #ccc;
+            }
+
+            .date {
+                float: right;
+            }
+
+            summary {
+                font-weight: 700;
+                line-height: 1.5;
+            }
+
+            footer {
+                background: #ccc;
+            }
+
+            button {
+                background: #4c9220;
+                border:0;
+                padding-top: 1em;
+            }
+
+            .left-drawer{ 
+                margin-top: 1.25em;
+                padding-top: 2em;
+                width: 100px;
+                display: block;
+            }
+
+            #topbar {
+                position: fixed;
+                z-index: 100;
+                width: 100%;
+                background: #4c9220;
+                top: 0;
+            }
+
+            #drawer-menu {
+                list-style-type: none;
+            }
+
+            body.ink-drawer .left-drawer, body.ink-drawer .right-drawer {
+                position: absolute;
+                top: 0;
+                z-index: 0;
+                display: none;
+                overflow-x: hidden;
+                overflow-y: auto;
+                width: 220px;
+                height: 100%;
+                -webkit-overflow-scrolling: touch;
+            }
+        </style>
+    </head>
+
+    <body class="ink-drawer">
+
+            <!--[if lte IE 9 ]>
+            <div class="ink-alert basic">
+                <button class="ink-dismiss">&times;</button>
+                <p>
+                    <strong>You are using an outdated Internet Explorer version.</strong>
+                    Please <a href="http://browsehappy.com/">upgrade to a browser</a> to improve your web experience.
+                </p>
+            </div>
+            -->
+
+            <!-- Add your site or application content here -->
+
+        <header class="clearfix vertical-padding">
+            <div id="topbar">
+                <nav class="ink-navigation ink-grid">
+                    <ul class="menu horizontal green flat push-left medium-push-center small-push-center tiny-push-center">
+                        <li class="hide-all show-tiny show-small show-medium"><button class="fa fa-bars left-drawer-trigger"></button></li>
+                        <li class="logoPlaceholder">
+                            <a href="index.html" class="logoPlaceholder"><i class="icon-leaf"></i>Columbia EcoReps</a>
+                        </li>
+                    </ul>
+                    <ul class="menu horizontal green flat push-left hide-small hide-tiny hide-medium">
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="committees.html">Committees</a>
+                            <ul class="submenu">
+                                <li><a href="bikeshare.html">Bike Share</a></li>
+                                <li><a href="dining.html">Dining</a></li>
+                                <li><a href="composting.html">Composting</a></li>
+                                <li><a href="livinggreen.html">Living Green</a></li>
+                                <li><a href="GGG.html">G and GG</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="members.html">Members</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div> 
+            <div class="left-drawer">
+                <ul id="drawer-menu">
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="committees.html">Committees</a></li>
+                <li><a href="members.html">Members</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            </div>
+        </header>
+        <div class="content-drawer">
+            <div class="ink-grid">
+                <section class="column-group gutters article">
+                    <div class="xlarge-70 large-70 medium-60 small-100 tiny-100">
+                        <article>
+                            <header>
+                                <h1 class="push-left">EcoReps Bike Share Committee</h1>
+                            </header>
+                            <summary>EcoReps Bike Share members train Columbia students on the basics of navigating New York roads responsibly and emissions-free!</summary>
+                            <figure class="ink-image vertical-space">
+                                <img src="images/bikesharelarge.jpg" alt="Bike Share!">
+                                <figcaption class="dark over-bottom">
+                                    Bike share members ran an energy-generating bike display at the 2014 EcoReps Greenfest at Low Plaza
+                                </figcaption>
+                            </figure>
+                            <p><blockquote>"Columbia Bike Share provides Columbia students with everything they need to bike throughout New York city. Wear your helmets!"</blockquote></p>
+                            <p>Currently, six working bikes are provided for all Columbia students as a healthy, free, and environementally friendly transportation alternative. Please sign up for the Bike Share program <a href="http://bit.ly/12ZiUc2">here</a>, and an email will be sent out to you regarding training sessions. Bikes are available for check-out from the Hartley Hospitality Desk from 8 AM to 7 PM. You must attend a training sessions and sign the waiver to be eligible for Bike Share.</p>
+                            <footer>
+                                <p><small>Creative Commons Attribution-ShareAlike License</small></p>
+                            </footer>
+                        </article>
+                    </div>
+                    <section class="xlarge-30 large-30 medium-40 small-100 tiny-100">
+                        <h2>Related</h2>
+                        <ul class="unstyled">
+                            <li class="column-group half-gutters">
+                                <div class="all-40 small-50 tiny-50"><img src="images/bogoside.jpg" alt=""></div>
+                                <div class="all-60 small-50 tiny-50"><p>Come out to our green events throughout the year for chances to get great freebies like Chipotle bogo cards!</p></div>
+                            </li>
+                            <li class="column-group half-gutters">
+                                <div class="all-40 small-50 tiny-50"><img src="images/foodscrapeside.jpg" alt=""></div>
+                                <div class="all-60 small-50 tiny-50"><p>The Dining Committee runs regular food scraping operations. Check out their page to learn how to participate.</p></div>
+                            </li>
+                            <li class="column-group half-gutters">
+                                <div class="all-40 small-50 tiny-50"><img src="images/bagcycleside.jpg" alt=""></div>
+                                <div class="all-60 small-50 tiny-50"><p>The Living Green Committee has set up plastic bag recycling bins throughout Columbia dorms.</p></div>
+                            </li>
+                            <li class="column-group half-gutters">
+                                <div class="all-40 small-50 tiny-50"><img src="images/greenfestside.jpg" alt=""></div>
+                                <div class="all-60 small-50 tiny-50"><p>Columbia Greenfest was a hit! Check out our pictures from the event and look forward to next year's festivities.</p></div>
+                            </li>
+                            <li class="column-group half-gutters">
+                                <div class="all-40 small-50 tiny-50"><img src="images/greenstoreside.jpg" alt=""></div>
+                                <div class="all-60 small-50 tiny-50"><p>EcoReps has merchandise! Shoot us a message if you're interested in some green goods!</p></div>
+                            </li>
+                        </ul>
+                    </section>
+                </section>
+                <section class="column-group gutters">
+                    <div class="all-20 small-100 tiny-100">
+                        <h3>Check your bike!</h3>
+                        <img class="half-bottom-space" src="images/bikeshare1.jpg" alt="">
+                        <p>Before you check out a bike always make sure that the tires aren't flat and the chains are functioning properly. </p>
+                    </div>
+                    <div class="all-20 small-100 tiny-100">
+                        <h3>Scenic Riding</h3>
+                        <img class="half-bottom-space" src="images/bikeshare4.jpg" alt="">
+                        <p>There are plenty of biking paths across the city. Most notably, the Greenway beyond Riverside Park is a great option for scenic riding!</p>
+                    </div>
+                    <div class="all-20 small-100 tiny-100">
+                        <h3>In the Street</h3>
+                        <img class="half-bottom-space" src="images/bikeshare5.jpg" alt="">
+                        <p>Of course, the streets of New York are also yours to ride. Just remember to bike with caution and safety in mind!</p>
+                    </div>
+                    <div class="all-20 small-100 tiny-100">
+                        <h3>Friendly Members</h3>
+                        <img class="half-bottom-space" src="images/bikeshare2.jpg" alt="">
+                        <p>The Bike Share committee meets every week and new members are always welcome!</p>
+                    </div>
+                    <div class="all-20 small-100 tiny-100">
+                        <h3>Join Us!</h3>
+                        <img class="half-bottom-space" src="images/bikeshare3.jpg" alt="">
+                        <p>Fill out this <a href="http://bit.ly/12ZiUc2">form</a> to sign up and receive updates.</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <footer class="clearfix">
+            <div class="ink-grid">
+                <ul class="unstyled inline half-vertical-space">
+                    <li><a href="https://www.facebook.com/pages/Columbia-EcoReps/142451429189053"><i class="icon-facebook-sign"></i> Like us on Facebook</a></li>
+                    <li><a href="http://housing.columbia.edu/">Columbia Housing</a></li>
+                    <li><a href="http://dining.columbia.edu/">Columbia Dining</a></li>
+                    <li><a href="http://www.environment.columbia.edu/">Environmental Stewardship</a></li>
+                </ul>
+                <p class="note">copyright © Columbia EcoReps</p>
+            </div>
+        </footer>
+        <script>
+        Ink.requireModules(['Ink.UI.Drawer_1'], function(Drawer) {
+          var inkDrawer = new Drawer({ sides: 'left', mode: 'push' });
+        });
+        </script>
+        <script>
+        Ink.requireModules(['Ink.UI.Carousel_1'], function(InkCarousel) {
+        new InkCarousel('#car2', {pagination: '#p2'})
+        });
+        </script>
+        <script type="text/javascript" src="js/search.js"></script>
+    </body>
+</html>

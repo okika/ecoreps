@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Give and Go Green</title>
+        <meta name="description" content="The Give and Go Green Committee is ready to divert your belongings from the landfill">
+        <meta name="author" content="Akiko Shimizu">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+        <!-- Place favicon.ico and apple-touch-icon(s) here  -->
+
+
+        <!-- load inks css from the cdn -->
+        <link rel="stylesheet" type="text/css" href="http://cdn.ink.sapo.pt/3.0.0/css/ink-flex.min.css">
+        <link rel="stylesheet" type="text/css" href="http://cdn.ink.sapo.pt/3.0.0/css/font-awesome.min.css">
+
+        <!-- load inks css for IE8 -->
+        <!--[if lt IE 9 ]>
+            <link rel="stylesheet" href="http://cdn.ink.sapo.pt/3.0.0/css/ink-ie.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
+        <![endif]-->
+
+        <!-- test browser flexbox support and load legacy grid if unsupported -->
+        <script type="text/javascript" src="http://cdn.ink.sapo.pt/3.0.0/js/modernizr.js"></script>
+        <script type="text/javascript">
+            Modernizr.load({
+              test: Modernizr.flexbox,
+              nope : 'http://cdn.ink.sapo.pt/3.0.0/css/ink-legacy.min.css'
+            });
+        </script>
+
+        <script type="text/javascript" src="js/modernizr.js"></script>
+        <script type="text/javascript">
+            Modernizr.load({
+              test: Modernizr.flexbox,
+              nope : 'http://cdn.ink.sapo.pt/3.0.0/css/ink-legacy.min.css'
+            });
+        </script>
+
+        <!-- load inks javascript files -->
+        <script type="text/javascript" src="js/holder.js"></script>
+        <script type="text/javascript" src="js/ink-all.js"></script>
+        <script type="text/javascript" src="js/autoload.js"></script>
+
+        <style type="text/css">
+
+            body {
+                background: #ededed;
+                padding-top: 1em;
+            }
+
+            header h1 small:before  {
+                content: "|";
+                margin: 0 0.5em;
+                font-size: 1.6em;
+            }
+
+            article header{
+                padding: 0;
+                overflow: hidden;
+            }
+
+            article footer {
+                background: none;
+            }
+
+            article {
+                padding-bottom: 2em;
+                border-bottom: 1px solid #ccc;
+            }
+
+            .date {
+                float: right;
+            }
+
+            summary {
+                font-weight: 700;
+                line-height: 1.5;
+            }
+
+            footer {
+                background: #ccc;
+            }
+
+            button {
+                background: #4c9220;
+                border:0;
+                padding-top: 1em;
+            }
+
+            .left-drawer{ 
+                margin-top: 1.25em;
+                padding-top: 2em;
+                width: 100px;
+                display: block;
+            }
+
+            #topbar {
+                position: fixed;
+                z-index: 100;
+                width: 100%;
+                background: #4c9220;
+                top: 0;
+            }
+
+            #drawer-menu {
+                list-style-type: none;
+            }
+
+            body.ink-drawer .left-drawer, body.ink-drawer .right-drawer {
+                position: absolute;
+                top: 0;
+                z-index: 0;
+                display: none;
+                overflow-x: hidden;
+                overflow-y: auto;
+                width: 220px;
+                height: 100%;
+                -webkit-overflow-scrolling: touch;
+            }
+        </style>
+    </head>
+
+    <body class="ink-drawer">
+
+            <!--[if lte IE 9 ]>
+            <div class="ink-alert basic">
+                <button class="ink-dismiss">&times;</button>
+                <p>
+                    <strong>You are using an outdated Internet Explorer version.</strong>
+                    Please <a href="http://browsehappy.com/">upgrade to a browser</a> to improve your web experience.
+                </p>
+            </div>
+            -->
+
+            <!-- Add your site or application content here -->
+
+        <header class="clearfix vertical-padding">
+            <div id="topbar">
+                <nav class="ink-navigation ink-grid">
+                    <ul class="menu horizontal green flat push-left medium-push-center small-push-center tiny-push-center">
+                        <li class="hide-all show-tiny show-small show-medium"><button class="fa fa-bars left-drawer-trigger"></button></li>
+                        <li class="logoPlaceholder">
+                            <a href="index.html" class="logoPlaceholder"><i class="icon-leaf"></i>Columbia EcoReps</a>
+                        </li>
+                    </ul>
+                    <ul class="menu horizontal green flat push-left hide-small hide-tiny hide-medium">
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="committees.html">Committees</a>
+                            <ul class="submenu">
+                                <li><a href="bikeshare.html">Bike Share</a></li>
+                                <li><a href="dining.html">Dining</a></li>
+                                <li><a href="composting.html">Composting</a></li>
+                                <li><a href="livinggreen.html">Living Green</a></li>
+                                <li><a href="GGG.html">G and GG</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="members.html">Members</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div> 
+            <div class="left-drawer">
+                <ul id="drawer-menu">
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="committees.html">Committees</a></li>
+                <li><a href="members.html">Members</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            </div>
+        </header>
+        <div class="content-drawer">
+            <div class="ink-grid">
+                <section class="column-group gutters article">
+                    <div class="xlarge-70 large-70 medium-60 small-100 tiny-100">
+                        <article>
+                            <header>
+                                <h1 class="push-left">EcoReps Give and Go Green Committee</h1>
+                            </header>
+                            <summary>If you have old belongings you don't want to just toss... donate to us or better yet join us for our spring and fall collecting/selling pushes!</summary>
+                            <figure class="ink-image vertical-space">
+                                <img src="images/gggmain.jpg" alt="Dining!">
+                                <figcaption class="dark over-bottom">
+                                    Give and Go Green Volunteers work hard to collect, clean, store, and donate!
+                                </figcaption>
+                            </figure>
+                            <p><blockquote>"The Give and Go Green Committee wants YOU to donate!"</blockquote></p>
+                            <p>Give and Go Green is a donation drive held at the end of every spring semester. We collect items like mini fridges, fans, and lamps to store over the summer and then sell to new students during Fall NSOP at the Green Sale for a very discounted price. Each year, we accept around 40 volunteers from our applicant pool to stay a week after school ends in the city to help collect and sort through donations. Then in the Fall, accepted students come before NSOP to help new student check-in, and coordinate NSOP events, culminating in the Green Sale. Although Give and Go Green generates revenue for Ecoreps to fund other large projects like Greenfest, we also donate all of the clothes, food, toiletries, and books we receive to local charities, and have been the largest donators to Goodwill in the past years.</p>
+                            <footer>
+                                <p><small>Columbia EcoReps</small></p>
+                            </footer>
+                        </article>
+                        <div class="column-group gutters">
+                            <div class="all-100"></br><h3>Meet the Give and Go Green Committee Heads!</h3></div>
+                            <div class="xlarge-50 large-50 all-100">
+                                <h4>Ben Wang</h4>
+                                <div class="all-100"><img src="images/benwang.jpg"><p class="push-right"></br>Ben was born in Toronto, Canada but raised near Philadelphia, PA. Ben is in the Columbia College class of 2016, and he plans to major in biology and economics. Ben is the leader of Ecoreps Give and Go Green and the Sustainability Liaison to the Columbia College Student Council. He loves to have fun, laugh, and live on the edge. In his free time, Ben enjoys playing sports, watching movies and TV, and listening to music.  His playlist was featured at Greenfest to great success. </p></div>
+                            </div>
+                            <div class="xlarge-50 large-50 all-100">
+                                <h4>Angel Wang</h4>
+                                <div class="all-100"><img src="images/angelwang.jpg"><p class="push-right"></br>Angel is an avid outdoors-woman from Grand Rapids, Michigan who plays tennis and loves to travel. She studies Political Science, Business, and Psychology, and intends to pursue a career in international social justice. Angel loves running Give and Go Green not only because it gives back to the community, but because it promotes a more morally conscious lifestyle by making people cognizant of their consumption and waste.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <section class="xlarge-30 large-30 medium-40 small-100 tiny-100">
+                        <h2>Related</h2>
+                        <ul class="unstyled">
+                            <li class="column-group half-gutters">
+                                <div class="all-40 small-50 tiny-50"><img src="images/bogoside.jpg" alt=""></div>
+                                <div class="all-60 small-50 tiny-50"><p>Come out to our green events throughout the year for chances to get great freebies like Chipotle bogo cards!</p></div>
+                            </li>
+                            <li class="column-group half-gutters">
+                                <div class="all-40 small-50 tiny-50"><img src="images/foodscrapeside.jpg" alt=""></div>
+                                <div class="all-60 small-50 tiny-50"><p>The Dining Committee runs regular food scraping operations. Check out their page to learn how to participate.</p></div>
+                            </li>
+                            <li class="column-group half-gutters">
+                                <div class="all-40 small-50 tiny-50"><img src="images/bagcycleside.jpg" alt=""></div>
+                                <div class="all-60 small-50 tiny-50"><p>The Living Green Committee has set up plastic bag recycling bins throughout Columbia dorms.</p></div>
+                            </li>
+                            <li class="column-group half-gutters">
+                                <div class="all-40 small-50 tiny-50"><img src="images/greenfestside.jpg" alt=""></div>
+                                <div class="all-60 small-50 tiny-50"><p>Columbia Greenfest was a hit! Check out our pictures from the event and look forward to next year's festivities.</p></div>
+                            </li>
+                            <li class="column-group half-gutters">
+                                <div class="all-40 small-50 tiny-50"><img src="images/greenstoreside.jpg" alt=""></div>
+                                <div class="all-60 small-50 tiny-50"><p>EcoReps has merchandise! Shoot us a message if you're interested in some green goods!</p></div>
+                            </li>
+                        </ul>
+                    </section>
+                </section>
+                <section class="column-group gutters">
+                    <div class="all-20 small-100 tiny-100">
+                        <h3>Mini Fridges</h3>
+                        <img class="half-bottom-space" src="images/ggg1.jpg" alt="">
+                        <p>Give and Go Green volunteers collect and scrub mini fridges for storage and subsequent reselling to students in the next semester.</p>
+                    </div>
+                    <div class="all-20 small-100 tiny-100">
+                        <h3>Hard at work</h3>
+                        <img class="half-bottom-space" src="images/ggg2.jpg" alt="">
+                        <p>Give and Go Green volunteers are hard at work! But the sun is out and the work is rewarding!</p>
+                    </div>
+                    <div class="all-20 small-100 tiny-100">
+                        <h3>Rolling along</h3>
+                        <img class="half-bottom-space" src="images/ggg3.jpg" alt="">
+                        <p>Give and Go Green volunteers cart student donations to and fro.</p>
+                    </div>
+                    <div class="all-20 small-100 tiny-100">
+                        <h3>Got Hangers?</h3>
+                        <img class="half-bottom-space" src="images/ggg5.jpg" alt="">
+                        <p>When Columbia students return to campus there will be no shortage of clothing hangers to fill the closet.</p>
+                    </div>
+                    <div class="all-20 small-100 tiny-100">
+                        <h3>The Haul</h3>
+                        <img class="half-bottom-space" src="images/ggg4.jpg" alt="">
+                        <p>Check out all the donations building up in Wien Lounge!</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <footer class="clearfix">
+            <div class="ink-grid">
+                <ul class="unstyled inline half-vertical-space">
+                    <li><a href="https://www.facebook.com/pages/Columbia-EcoReps/142451429189053"><i class="icon-facebook-sign"></i> Like us on Facebook</a></li>
+                    <li><a href="http://housing.columbia.edu/">Columbia Housing</a></li>
+                    <li><a href="http://dining.columbia.edu/">Columbia Dining</a></li>
+                    <li><a href="http://www.environment.columbia.edu/">Environmental Stewardship</a></li>
+                </ul>
+                <p class="note">copyright © Columbia EcoReps</p>
+            </div>
+        </footer>
+        <script>
+        Ink.requireModules(['Ink.UI.Drawer_1'], function(Drawer) {
+          var inkDrawer = new Drawer({ sides: 'left', mode: 'push' });
+        });
+        </script>
+        <script>
+        Ink.requireModules(['Ink.UI.Carousel_1'], function(InkCarousel) {
+        new InkCarousel('#car2', {pagination: '#p2'})
+        });
+        </script>
+        <script type="text/javascript" src="js/search.js"></script>
+    </body>
+</html>

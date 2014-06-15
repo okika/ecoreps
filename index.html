@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Columbia EcoReps</title>
+        <meta name="description" content="Columbia EcoReps is a group of students working in collaboration with Columbia's Office of Housing and Dining and Environmental Stewardship to provide environmental peer-to-peer resources for Columbia students.">
+        <meta name="author" content="Akiko Shimizu">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+        <!-- Place favicon.ico and apple-touch-icon(s) here  -->
+
+        <!--<link rel="shortcut icon" href="http://cdn.ink.sapo.pt/3.0.0/img/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" href="http://cdn.ink.sapo.pt/3.0.0/img/touch-icon.57.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://cdn.ink.sapo.pt/3.0.0/img/touch-icon.72.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://cdn.ink.sapo.pt/3.0.0/img/touch-icon.114.png">
+        <link rel="apple-touch-startup-image" href="http://cdn.ink.sapo.pt/3.0.0/img/splash.320x460.png" media="screen and (min-device-width: 200px) and (max-device-width: 320px) and (orientation:portrait)">
+        <link rel="apple-touch-startup-image" href="http://cdn.ink.sapo.pt/3.0.0/img/splash.768x1004.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)">
+        <link rel="apple-touch-startup-image" href="http://cdn.ink.sapo.pt/3.0.0/img/splash.1024x748.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)">-->
+
+        <!-- load inks css from the cdn -->
+        <link rel="stylesheet" type="text/css" href="http://cdn.ink.sapo.pt/3.0.0/css/ink-flex.min.css">
+        <link rel="stylesheet" type="text/css" href="http://cdn.ink.sapo.pt/3.0.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="/assets/css/docs.min.css">
+
+        <!-- load inks css for IE8 -->
+        <!--[if lt IE 9 ]>
+            <link rel="stylesheet" href="http://cdn.ink.sapo.pt/3.0.0/css/ink-ie.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
+        <![endif]-->
+
+        <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-touch-icon-152x152.png">
+        <link rel="icon" type="image/png" href="favicons/favicon-196x196.png" sizes="196x196">
+        <link rel="icon" type="image/png" href="favicons/favicon-160x160.png" sizes="160x160">
+        <link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
+        <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+
+        <!-- test browser flexbox support and load legacy grid if unsupported -->
+        <script type="text/javascript" src="js/modernizr.js"></script>
+        <script type="text/javascript">
+            Modernizr.load({
+              test: Modernizr.flexbox,
+              nope : 'http://cdn.ink.sapo.pt/3.0.0/css/ink-legacy.min.css'
+            });
+        </script>
+
+        <!-- load inks javascript files from the cdn -->
+        <script type="text/javascript" src="js/holder.js"></script>
+        <script type="text/javascript" src="js/ink-all.js"></script>
+        <script type="text/javascript" src="js/autoload.js"></script>
+
+        <style type="text/css">
+
+
+            body {
+                background: #ededed;
+            }
+            header {
+                overflow: hidden;
+            }
+            
+            h1 {
+                font-size: 2em;
+                margin-top: 1em;
+                margin-bottom: 0;
+            }
+
+            h2 {
+                font-size: 2em;
+                margin-bottom: 1em;
+            }
+            footer {
+                background: #ccc;
+                color: #000;
+            }
+            footer a {
+                color: #000;
+            }
+            footer p {        
+                padding: 0.5em 1em 0.5em 0;
+                margin: 0;        
+            }
+
+            button {
+                background: #4c9220;
+                border:0;
+                padding-top: 1em;
+            }
+
+            header {
+                padding-top: 0;
+            }
+
+            .left-drawer.show{ 
+                margin-top: 1.25em;
+                padding-top: 2em;
+                width: 100px;
+                display: block;
+            }
+
+            #topbar {
+                position: fixed;
+                z-index: 100;
+                width: 100%;
+                background: #4c9220;
+                top: 0;
+            }
+
+            #car2 {
+                margin left: 0px;
+                margin right: 0px;
+                top: .95px;
+                bottom: 0px;
+            }
+
+            #filla {
+                margin-top: 2em;
+                padding-top: 2em;
+            }
+
+            #drawer-menu {
+                list-style-type: none;
+            }
+
+            body.ink-drawer .left-drawer body.ink-drawer .right-drawer {
+                position: absolute;
+                top: 0;
+                z-index: 0;
+                display: none;
+                overflow-x: hidden;
+                overflow-y: auto;
+                width: 220px;
+                height: 100%;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            #car2 {
+                padding-bottom: 0;
+                margin-bottom: 0;
+            }
+
+        </style>
+
+    </head>
+
+    <body class="ink-drawer">
+        <header>
+            <div id="topbar">
+                <nav class="ink-navigation ink-grid">
+                    <ul class="menu horizontal green flat push-left medium-push-center small-push-center tiny-push-center">
+                        <li class="hide-all show-tiny show-small show-medium"><button class="fa fa-bars left-drawer-trigger"></button></li>
+                        <li class="logoPlaceholder">
+                            <a href="index.html" class="logoPlaceholder"><i class="icon-leaf"></i>Columbia EcoReps</a>
+                        </li>
+                    </ul>
+                    <ul class="menu horizontal green flat push-left hide-small hide-tiny hide-medium">
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="committees.html">Committees</a>
+                            <ul class="submenu">
+                                <li><a href="bikeshare.html">Bike Share</a></li>
+                                <li><a href="dining.html">Dining</a></li>
+                                <li><a href="composting.html">Composting</a></li>
+                                <li><a href="livinggreen.html">Living Green</a></li>
+                                <li><a href="GGG.html">G and GG</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="members.html">Members</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div> 
+            <div class="left-drawer">
+                <ul id="drawer-menu">
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="committees.html">Committees</a></li>
+                <li><a href="members.html">Members</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            </div>
+        </header>
+        <div class="content-drawer">
+            <div class="ink-grid">
+
+                <!--[if lte IE 9 ]>
+                <div class="ink-alert basic">
+                    <button class="ink-dismiss">&times;</button>
+                    <p>
+                        <strong>You are using an outdated Internet Explorer version.</strong>
+                        Please <a href="http://browsehappy.com/">upgrade to a browser</a> to improve your web experience.
+                    </p>
+                </div>
+                -->
+
+                <!-- Add your site or application content here -->
+                <div id="car2" class="ink-carousel panel vertical-space hide-small hide-tiny">
+                    
+                    <ul class="stage column-group half-gutters unstyled">
+
+                        <li class="slide xlarge-100 large-100 medium-100 small-100 tiny-100">
+                            <img class="half-bottom-space" src="images/Almamater.jpg">
+                        </li>
+
+                        <li class="slide xlarge-100 large-100 medium-100 small-100 tiny-100">
+                            <img class="half-bottom-space" src="images/greenfestbanner.jpg">
+                        </li>
+
+                        <li class="slide xlarge-100 large-100 medium-100 small-100 tiny-100">
+                            <img class="half-bottom-space" src="images/diningbanner.jpg">
+                        </li>
+                    </ul>
+
+
+                    <nav id="p2" class="ink-navigation" data-instance="pagination2" data-next-label="" data-previous-label="">
+                        <ul class="pagination dotted">
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="column-group gutters">
+                    <div class="hide-xlarge hide-large hide-medium"></br><p>Columbia EcoReps</p></div>
+                    <div class="all-100"><h1>Learn more about EcoReps and our campus initiatives</h1></div>
+                    <div class="xlarge-50 large-50 all-100">
+                        <a href="GGG.html"><img src="images/GandGG.jpg"></a>
+                    </div>
+                    <div class="xlarge-25 large-25 all-50">
+                        <a href="dining.html"><img src="images/dining.jpg"></a>
+                        <p class="quarter-top-space">The dining committee promotes green dining habits throughout the student body by working directly with campus dining administration and by conducting regular plate scrapings during peak dinner hours. Be green by dining green!</p>
+                    </div>
+                    <div class="xlarge-25 large-25 all-50">
+                        <a href="composting.html"><img src="images/composting.jpg"></a>
+                        <p class="quarter-top-space">Members of the composting committee are the loving caretakers of their aerobic, above-ground composter dubbed "The Rocket." Every week they feed it food scraps from the dining halls and are currently transitioning into student contributions.</p>
+                    </div>
+                </div>
+                <div class="column-group gutters">
+                    <div class="xlarge-50 large-50 all-100">
+                        <a href="https://www.flickr.com/photos/104911590@N03/sets/72157644137590316"><img src="images/greenfest.jpg"></a>
+                    </div>
+                    <div class="xlarge-25 large-25 all-50">
+                        <a href="livinggreen.html"><img src="images/livinggreen.jpg"></a>
+                        <p class="quarter-top-space">Thanks to the living green committee Columbia students are green even in the comfort of their home away from home. Plastic bag recycling and conventional bottle/can and paper recycling are second nature with their efforts!</p>
+                    </div>
+                    <div class="xlarge-25 large-25 all-50">
+                        <a href="bikeshare.html"><img src="images/bikeshare.jpg"></a>
+                        <p class="quarter-top-space">If you are a Columbia student and need a way to get around New York in the greenest way possible, look no further. After a brief training session, the bikeshare committee offers you its lineup of bikes for use whenever your heart desires.</p>
+                    </div>
+                </div>
+                <h2>EcoReps Highlights and Resources</h2>
+                <div class="column-group gutters">
+                    <div class="all-33 small-100 tiny-100">
+                        <a href="http://eepurl.com/M6lmP"><img src="images/newlettersignup.png"></a>
+                        <p class="quarter-top-space">Want to be updated with our activities throughout the year? Click the above link to sign up for a green newsletter made with love by EcoReps!</p>
+                    </div>
+                    <div class="all-33 small-100 tiny-100">
+                        <a href="https://docs.google.com/forms/d/13BpRcJ6GaDJCQPzIfTQOdz5nzcnR0Qu4zxMki5mv0Kc/viewform"><img src="images/joinus.png"></a>
+                        <p class="quarter-top-space">Anyday is a good day to become an EcoRep. Click above or <a href="https://docs.google.com/forms/d/13BpRcJ6GaDJCQPzIfTQOdz5nzcnR0Qu4zxMki5mv0Kc/viewform">here</a> to get in touch with us and get involved!</p>
+                    </div>
+                    <div class="all-33 small-100 tiny-100">
+                        <a href="resources.html"><img src="images/resources.png"></a>
+                        <p class="quarter-top-space">If you want some tips on living green in college or anywhere, check out our Green Resources page and get informed!</p>
+                    </div>
+                </div>
+                <h2>The Faces of Columbia EcoReps</h2>
+                <div class="column-group gutters">
+                    <div class="xlarge-20 large-20 medium-25 small-50 tiny-100">
+                        <img src="images/sarahforthal.jpg">
+                        <p>Sarah Forthal, CC '15</p>
+                    </div>
+                    <div class="xlarge-20 large-20 medium-25 small-50 tiny-100">
+                        <img src="images/kellyechavarria.jpg">
+                        <p>Kelly Echavarria, CC '16</p>
+                    </div>
+                    <div class="xlarge-20 large-20 medium-25 small-50 tiny-100">
+                        <img src="images/akikoshimizu.jpg">
+                        <p>Akiko Shimizu, SEAS '16</p>
+                    </div>
+                    <div class="xlarge-20 large-20 medium-25 small-50 tiny-100">
+                        <img src="images/emmatuz.jpg">
+                        <p>Emma Tuzinkiewicz, CC '15</p>
+                    </div>
+                    <div class="xlarge-20 large-20 hide-small hide-medium tiny-100">
+                        <img src="images/jamesgeddis.jpg">
+                        <p>James Geddis, SEAS '16</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="clearfix">
+            <div class="ink-grid">
+                <ul class="unstyled inline half-vertical-space">
+                    <li><a href="https://www.facebook.com/pages/Columbia-EcoReps/142451429189053"><i class="icon-facebook-sign"></i> Like us on Facebook</a></li>
+                    <li><a href="http://housing.columbia.edu/">Columbia Housing</a></li>
+                    <li><a href="http://dining.columbia.edu/">Columbia Dining</a></li>
+                    <li><a href="http://www.environment.columbia.edu/">Environmental Stewardship</a></li>
+                </ul>
+                <p class="note">copyright © Columbia EcoReps</p>
+            </div>
+        </footer>
+        <script>
+        Ink.requireModules(['Ink.UI.Drawer_1'], function(Drawer) {
+          var inkDrawer = new Drawer({ sides: 'left', mode: 'push' });
+        });
+        </script>
+        <script>
+        Ink.requireModules(['Ink.UI.Carousel_1'], function(InkCarousel) {
+        new InkCarousel('#car2', {pagination: '#p2'})
+        });
+        </script>
+        <script type="text/javascript" src="js/search.js"></script>
+    </body>
+
+</html>
